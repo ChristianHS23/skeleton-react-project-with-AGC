@@ -108,7 +108,7 @@
     ],
     "comma-dangle": [
       "error",
-      "never"
+      "always-multiline"
     ],
     "no-unused-vars": [
       "error",

@@ -1,5 +1,5 @@
 /* eslint-disable react/react-in-jsx-scope */
-import logo from './logo.svg';
+import logo from './assets/images/logo.svg';
 import './App.scss';
 
 function App() {

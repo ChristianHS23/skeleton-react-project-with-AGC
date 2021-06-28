@@ -1,0 +1,123 @@
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+
+/* ----------------------
+  - COLORS
+  ---------------------- */
+  $colors: (
+    // white colors
+    white:(
+      150: #fffff3,
+      120: #fffff2,
+      100: #fff,
+      90: #fffffd,
+      75: #fffff1,
+      50: #fffff0
+    ),
+  );
+
+  $gradient: (
+    green:(
+      0: #015b4d,
+      100: #006757
+    )
+  );
+
+  /* ----------------------
+    - FONT
+    ---------------------- */
+  // Font Family
+  $ff-main: "Lato", sans-serif;
+
+  // Font Size
+  $fz: (
+    h1: 6.4rem,
+    mh1: 4rem,
+    h2: 4rem,
+    mh2: 2.6rem,
+    h3: 3rem,
+    mh3: 1.8rem,
+    h4: 2.4rem,
+    mh4: 1.6rem,
+    body: 2rem,
+    mbody: 1.6rem,
+    info: 1.6rem,
+    minfo: 1.4rem,
+    action: 1.2rem,
+    maction: 1.2rem,
+    label: 1.2rem,
+    mlabel: 1rem,
+  );
+
+  // Line Height
+  $lh: (
+    h1: 1.2,
+    mh1: 1.2,
+    h2: 1.4,
+    mh2: 1.33,
+    h3: 1.6,
+    mh3: 1.78,
+    h4: 1.33,
+    mh4: 1.5,
+    body: 1.6,
+    mbody: 1.5,
+    info: 1.5,
+    minfo: 1.71,
+    action: 2,
+    maction: 2,
+    label: 1.33,
+    mlabel: 1.6,
+  );
+
+  // Font Weight
+  $fw: (
+    light: 300,
+    reguler: 400,
+    bold: 700,
+    black: 900
+  );
+
+  /* ----------------------
+    - RADIUS
+    ---------------------- */
+  $radius: 2rem;
+
+  /* ----------------------
+    - SCREEN
+    ---------------------- */
+  $screen: (
+    large: 1440px,
+    high-medium: 1200px,
+    medium: 1024px,
+    small: 896px,
+    ipad: 768px,
+    phone: 480px,
+    iphone5: 320px
+  );
+
+  /* ----------------------
+    - SHADOW
+    ---------------------- */
+  $shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+  $shadow-bold: 0 2px 15px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+
+  /* ----------------------
+    - SPACING
+    ---------------------- */
+  $spacing-4: 0.4rem;
+  $spacing-8: 0.8rem;
+  $spacing-16: 1.6rem;
+  $spacing-24: 2.4rem;
+  $spacing-32: 3.2rem;
+  $spacing-40: 4rem;
+  $spacing-48: 4.8rem;
+  $spacing-56: 5.6rem;
+  $spacing-64: 6.4rem;
+  $spacing-list: 0 4 8 16 24 32 40 48 56 64 72;
+
+  /* ----------------------
+    - Z-INDEX
+    ---------------------- */
+  $z-header: 9;
+  $z-loader-page: 20;

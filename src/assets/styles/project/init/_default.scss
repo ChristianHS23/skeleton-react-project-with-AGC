@@ -1,0 +1,28 @@
+
+/* ==========================================================================
+   DEFAULT
+   ========================================================================== */
+   html {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+  }
+  body {
+    font-family: $ff-main;
+    font-weight: fw(reguler);
+    font-size: fz(body);
+    line-height: lh(body);
+    color: color(black);
+    letter-spacing: normal;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: fw(bold);
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  a:active {
+    @include remove-tap-highlight;
+  }
