@@ -8,4 +8,5 @@ export default (history) =>
   combineReducers({
     exampleActions,
     exampleActions2,
-  ,exampleAction });
+    exampleAction,
+  });
