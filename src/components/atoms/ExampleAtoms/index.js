@@ -1,22 +1,20 @@
 // ExampleAtoms Component
 // --------------------------------------------------------
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import './styles.scss';
+import React from "react";
+import PropTypes from "prop-types";
+import "./styles.scss";
 
 const ExampleAtoms = ({ propsName }) => (
-<tag>
-  Functional Component (Stateless Component)
-</tag>
+  <tag>Functional Component (Stateless Component)</tag>
 );
 
 ExampleAtoms.propTypes = {
-propsName: PropTypes.string,
+  propsName: PropTypes.string,
 };
 
 ExampleAtoms.defaultProps = {
-propsName: '',
+  propsName: "",
 };
 
 export default ExampleAtoms;

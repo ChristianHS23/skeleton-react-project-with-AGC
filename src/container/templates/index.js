@@ -2,6 +2,6 @@
 // Templates Indexing
 // -------------------------
 
-import ExampleTemplates from './ExampleTemplates';
+import ExampleTemplates from "./ExampleTemplates";
 
 export { ExampleTemplates };

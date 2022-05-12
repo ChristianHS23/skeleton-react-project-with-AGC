@@ -1,9 +1,10 @@
+/* eslint-disable no-unused-vars */
 // ExampleTemplates Component
 // --------------------------------------------------------
 
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import './styles.scss';
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import "./styles.scss";
 
 const ExampleTemplates = ({ propsName }) => {
   const [example, setExample] = useState(0);
@@ -13,19 +14,15 @@ const ExampleTemplates = ({ propsName }) => {
     document.title = `You clicked ${example} times`;
   });
 
-  return (
-    <tag>
-      Functional Component (Stateless Component)
-    </tag>
-  );
-}
+  return <tag>Functional Component (Stateless Component)</tag>;
+};
 
 ExampleTemplates.propTypes = {
-propsName: PropTypes.string,
+  propsName: PropTypes.string,
 };
 
 ExampleTemplates.defaultProps = {
-propsName: '',
+  propsName: "",
 };
 
 export default ExampleTemplates;

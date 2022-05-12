@@ -2,6 +2,6 @@
 // Atoms Indexing
 // -------------------------
 
-import ExampleAtoms from './ExampleAtoms';
+import ExampleAtoms from "./ExampleAtoms";
 
 export { ExampleAtoms };

@@ -4,7 +4,7 @@ import {
   SET_ERROR,
   INIT_DATA,
   SET_DOUBLE_SUBMIT,
-} from 'stores/actions/exampleActions';
+} from "stores/actions/exampleActions";
 
 const initialState = {
   isLoading: false,

@@ -7,13 +7,13 @@ import {
   SET_ERROR,
   INIT_DATA,
   SET_DOUBLE_SUBMIT,
-} from 'stores/actions/exampleAction';
+} from "stores/actions/exampleAction";
 
 const initialState = {
   isLoading: false,
   isDoubleSubmit: false,
   isSubmitting: false,
-  error: {}
+  error: {},
 };
 
 export default (state = initialState, { payload, type }) => {
@@ -21,26 +21,26 @@ export default (state = initialState, { payload, type }) => {
     case SET_LOADING:
       return {
         ...state,
-        isLoading: payload
+        isLoading: payload,
       };
     case SET_DOUBLE_SUBMIT:
       return {
         ...state,
-        isDoubleSubmit: payload
+        isDoubleSubmit: payload,
       };
     case SET_ERROR:
       return {
         ...state,
-        error: payload
+        error: payload,
       };
     case CLEAR_ERROR:
       return {
         ...state,
-        error: {}
+        error: {},
       };
     case INIT_DATA:
       return {
-        ...initialState
+        ...initialState,
       };
     default:
       return state;

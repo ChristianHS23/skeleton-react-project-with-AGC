@@ -2,6 +2,6 @@
 // Organism Indexing
 // -------------------------
 
-import ExampleOrganisms from './ExampleOrganisms';
+import ExampleOrganisms from "./ExampleOrganisms";
 
 export { ExampleOrganisms };

@@ -2,6 +2,6 @@
 // Molecules Indexing
 // ------------------------
 
-import ExampleMolecules from './ExampleMolecules';
+import ExampleMolecules from "./ExampleMolecules";
 
 export { ExampleMolecules };

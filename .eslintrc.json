@@ -1,51 +1,65 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "extends": [
-        "plugin:react/recommended",
-        "plugin:react-hooks/recommended",
-        "airbnb",
-        "prettier"
-    ],
-    "settings": {
-      "import/resolver": {
-        "node": {
-          "moduleDirectory": ["node_modules", "src/"],
-          "extensions": [".js", ".jsx"]
-        }
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "airbnb",
+    "prettier"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src/"],
+        "extensions": [".js", ".jsx"]
       }
+    }
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "parser": "babel-eslint",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 12,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react", "jsx-a11y", "eslint-plugin-prettier", "prettier", "react-hooks"
-    ],
-    "rules": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "eslint-plugin-prettier",
+    "prettier",
+    "react-hooks"
+  ],
+  "rules": {
     "react/prefer-stateless-function": 0,
+    "react/button-has-type": "off",
     "space-before-function-paren": [
       "error",
-      "never"
+      { "anonymous": "always", "named": "never", "asyncArrow": "always" }
     ],
     "import/no-named-as-default": 0,
+    "import/no-cycle": "off",
     "prettier/prettier": [
       "warn",
       {
-        "singleQuote": true,
-        "jsxSingleQuote": true,
+        "singleQuote": false,
+        "jsxSingleQuote": false,
         "tabWidth": 2,
         "semi": true,
         "arrowParens": "always",
-        "bracketSpacing": true
+        "bracketSpacing": true,
+        "endOfLine": "auto"
       }
     ],
+    "react/jsx-props-no-spreading": [
+      "warn",
+      {
+        "custom": "ignore"
+      }
+    ],
+    "react/jsx-fragments": ["warn", "element"],
     "import/named": "off",
     "max-depth": [
       "warn",
@@ -54,32 +68,21 @@
       }
     ],
     "linebreak-style": "off",
-    "react/no-array-index-key": [
-      "off"
-    ],
-    "max-len": [
-      "off"
-    ],
+    "react/no-array-index-key": ["off"],
+    "max-len": ["off"],
     "react/forbid-prop-types": [
       1,
       {
-        "forbid": [
-          "any"
-        ]
+        "forbid": ["any"]
       }
     ],
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
+        "extensions": [".js", ".jsx"]
       }
     ],
-    "react/no-danger": [
-      "off"
-    ],
+    "react/no-danger": ["off"],
     "import/extensions": [
       "error",
       "always",
@@ -91,27 +94,19 @@
     "jsx-a11y/label-has-for": [
       0,
       {
-        "components": [
-          "Label"
-        ],
+        "components": ["Label"],
         "allowChildren": true
       }
     ],
     "no-console": [
       "error",
       {
-        "allow": [
-          "warn",
-          "error"
-        ]
+        "allow": ["warn", "error"]
       }
     ],
-    "comma-dangle": [
-      "off",
-      "always-multiline"
-    ],
+    "comma-dangle": ["off", "always-multiline"],
     "no-unused-vars": [
-      "error",
+      "warn",
       {
         "args": "none",
         "caughtErrors": "all"
@@ -120,9 +115,7 @@
     "no-shadow": [
       "off",
       {
-        "allow": [
-          "props"
-        ]
+        "allow": ["props"]
       }
     ],
     "no-param-reassign": [
@@ -151,11 +144,8 @@
     "no-underscore-dangle": [
       "error",
       {
-        "allow": [
-          "_id",
-          "_isMounted"
-        ]
+        "allow": ["_id", "_isMounted"]
       }
     ]
-    }
+  }
 }

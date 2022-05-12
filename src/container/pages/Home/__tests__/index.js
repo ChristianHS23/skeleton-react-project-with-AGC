@@ -1,13 +1,13 @@
-// Test {{ properCase name }} Component
+// Test Home Component
 // --------------------------------------------------------
 
 import React from "react";
-import {{ properCase name }} from "../../index";
+import Home from "../../index";
 import renderer from "react-test-renderer";
 
 test("Input is match the snapshot", () => {
 const component = renderer.create(
-{{ properCase name }},
+Home,
 );
 let tree = component.toJSON();
 expect(tree).toMatchSnapshot();
